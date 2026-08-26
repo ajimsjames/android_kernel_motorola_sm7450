@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/input/focaltech_mmi_modules.h

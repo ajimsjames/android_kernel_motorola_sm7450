@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/input/sx937x_multi.h

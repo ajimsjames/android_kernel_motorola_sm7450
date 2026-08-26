@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/platform_data/cs40l2x.h

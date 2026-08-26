@@ -1,0 +1,1 @@
+../../../sm7450-modules/motorola/include/linux/mmi_kernel_common.h

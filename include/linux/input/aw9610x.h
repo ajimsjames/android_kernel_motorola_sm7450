@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/input/aw9610x.h

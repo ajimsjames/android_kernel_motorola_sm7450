@@ -1,0 +1,1 @@
+../../../sm7450-modules/motorola/include/linux/drv2624_mmi.h

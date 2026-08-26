@@ -1,0 +1,1 @@
+../../../sm7450-modules/motorola/include/linux/mmi_discrete_power_supply.h

@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/input/abov_sar_a96t.h

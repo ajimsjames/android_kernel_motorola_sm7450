@@ -1,0 +1,1 @@
+../../../sm7450-modules/motorola/include/linux/pen_detection_notify.h

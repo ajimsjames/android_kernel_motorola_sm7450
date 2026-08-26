@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/input/aw_bin_parse.h

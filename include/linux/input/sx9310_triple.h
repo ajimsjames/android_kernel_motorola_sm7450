@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/input/sx9310_triple.h

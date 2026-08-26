@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/power/max170xx_battery_mmi.h

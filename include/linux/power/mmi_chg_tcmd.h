@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/power/mmi_chg_tcmd.h

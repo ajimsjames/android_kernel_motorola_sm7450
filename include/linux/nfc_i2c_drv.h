@@ -1,0 +1,1 @@
+../../../sm7450-modules/motorola/include/linux/nfc_i2c_drv.h

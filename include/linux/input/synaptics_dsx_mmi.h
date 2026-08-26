@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/input/synaptics_dsx_mmi.h

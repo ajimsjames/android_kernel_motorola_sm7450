@@ -1,0 +1,1 @@
+../../../../sm7450-modules/motorola/include/linux/power/bm_adsp_ulog.h
