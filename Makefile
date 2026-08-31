@@ -1233,8 +1233,8 @@ PHONY += headers
 techpack-dirs := $(shell find $(srctree)/techpack -maxdepth 1 -mindepth 1 -type d -not -name ".*")
 techpack-dirs := $(subst $(srctree)/,,$(techpack-dirs))
 
-ext-mod-dir := ../sm7435-modules
-ext-mod-dirs := $(ext-mod-dir)/qcom/opensource/audio-kernel $(ext-mod-dir)/qcom/opensource/display-drivers $(ext-mod-dir)/qcom/opensource/video-kernel
+ext-mod-dir := ../sm7450-modules
+ext-mod-dirs := $(ext-mod-dir)/qcom/opensource/audio-kernel $(ext-mod-dir)/qcom/opensource/display-drivers $(ext-mod-dir)/qcom/opensource/video-driver $(ext-mod-dir)/qcom/opensource/camera-kernel $(ext-mod-dir)/qcom/opensource/cvp-kernel $(ext-mod-dir)/qcom/opensource/eva-kernel
 ext-mod-dirs := $(subst $(srctree)/,,$(ext-mod-dirs))
 
 #Default location for installed headers
@@ -1270,6 +1270,9 @@ endif
 		$(MAKE) $(hdr-inst)=$$d/include/uapi; \
 	done
 	$(Q)for d in $(ext-mod-dirs); do \
+		if [ -d $(srctree)/$$d/include/uapi/audio ]; then \
+			$(MAKE) $(hdr-inst)=$$d/include/uapi/audio; \
+		fi; \
 		$(MAKE) $(hdr-inst)=$$d/include/uapi; \
 	done
 
