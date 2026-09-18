@@ -230,7 +230,15 @@ ld_flags       = $(KBUILD_LDFLAGS) $(ldflags-y) $(LDFLAGS_$(@F))
 
 # ANDROID: Allow DTC_INCLUDE to be set by the BUILD_CONFIG. This allows one to
 # compile an out-of-tree device tree.
-DTC_INCLUDE    += $(srctree)/scripts/dtc/include-prefixes $(KBUILD_DTC_INCLUDE)
+DTC_INCLUDE    += $(srctree)/scripts/dtc/include-prefixes $(KBUILD_DTC_INCLUDE) \
+		  $(srctree)/../sm7450-modules/qcom/opensource/audio-kernel/include \
+		  $(srctree)/../sm7450-modules/qcom/opensource/camera-kernel \
+		  $(srctree)/../sm7450-modules/qcom/opensource/display-drivers \
+		  $(srctree)/../sm7450-modules/qcom/opensource/display-drivers/msm \
+		  $(srctree)/../sm7450-modules/qcom/opensource/video-driver \
+		  $(srctree)/../sm7450-modules/qcom/opensource/cvp-kernel \
+		  $(srctree)/../sm7450-modules/qcom/opensource/eva-kernel \
+		  $(srctree)/../sm7450-modules/motorola/include
 
 dtc_cpp_flags  = -Wp,-MMD,$(depfile).pre.tmp -nostdinc                    \
 		 $(addprefix -I,$(DTC_INCLUDE))                          \
